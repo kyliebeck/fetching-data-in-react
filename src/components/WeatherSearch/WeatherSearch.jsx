@@ -5,6 +5,8 @@ import { useState } from 'react';
 const WeatherSearch = (props) => {
     const [city, setCity] = useState('');
 
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
         props.fetchData(city); // Don't forget to pass city state!
